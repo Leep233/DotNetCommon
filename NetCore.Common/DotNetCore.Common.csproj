@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>DotNetCore.Common</AssemblyName>
+    <RootNamespace>DotNetCore.Common</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\DLP\DLP\NetCore.Common\NetCore.Common\DotNetCore.Common.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\..\..\..\项目\项目\货币兑换\项目相关源码\LogicalThinking.CurrencyConversion\LogicalThinking.Common\bin\Debug\ChnCharInfo.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.6.8" />
+    <PackageReference Include="NLog.Config" Version="4.6.8" />
+  </ItemGroup>
+
+</Project>

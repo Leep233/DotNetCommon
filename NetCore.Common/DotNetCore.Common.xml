@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotNetCore.Common</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetCore.Common.Events.FrameworkEventBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEventBase.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.Events.FrameworkEvent">
+            <summary>
+            事件
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.Events.FrameworkEvent._handler">
+            <summary>
+            承载所有事件的委托
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.Events.FrameworkEvent._listenerActions">
+            <summary>
+            所有监听委托的列表
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEvent.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent.AddListenerEvent(System.Action)">
+            <summary>
+            添加一个需要监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent.RemoveListenerEvent(System.Action)">
+            <summary>
+            移除一个已经监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent.RemoveAllListener">
+            <summary>
+            清空所有监听事件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent.Invoke">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.Events.FrameworkEvent`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:DotNetCore.Common.Events.FrameworkEvent`1._handler">
+            <summary>
+            承载所有事件的委托
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.Events.FrameworkEvent`1._listenerActions">
+            <summary>
+            所有监听委托的列表
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEvent`1.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`1.AddListenerEvent(System.Action{`0})">
+            <summary>
+            添加一个需要监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`1.RemoveListenerEvent(System.Action{`0})">
+            <summary>
+            移除一个已经监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`1.RemoveAllListener">
+            <summary>
+            清空所有监听事件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`1.Invoke(`0)">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.Events.FrameworkEvent`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T0"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEvent`2.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`2.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`2.AddListenerEvent(System.Action{`0,`1})">
+            <summary>
+            添加一个需要监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`2.RemoveListenerEvent(System.Action{`0,`1})">
+            <summary>
+            移除一个已经监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`2.RemoveAllListener">
+            <summary>
+            清空所有监听事件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`2.Invoke(`0,`1)">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.Events.FrameworkEvent`3">
+            <summary>
+            
+            </summary>
+            <typeparam name="T0"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEvent`3.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`3.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`3.AddListenerEvent(System.Action{`0,`1,`2})">
+            <summary>
+            添加一个需要监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`3.RemoveListenerEvent(System.Action{`0,`1,`2})">
+            <summary>
+            移除一个已经监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`3.RemoveAllListener">
+            <summary>
+            清空所有监听事件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`3.Invoke(`0,`1,`2)">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.Events.FrameworkEvent`4">
+            <summary>
+            
+            </summary>
+            <typeparam name="T0"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+        </member>
+        <member name="P:DotNetCore.Common.Events.FrameworkEvent`4.ListenerCount">
+            <summary>
+            监听者的数量
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`4.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`4.AddListenerEvent(System.Action{`0,`1,`2,`3})">
+            <summary>
+            添加一个需要监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`4.RemoveListenerEvent(System.Action{`0,`1,`2,`3})">
+            <summary>
+            移除一个已经监听的事件
+            </summary>
+            <param name="method"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`4.RemoveAllListener">
+            <summary>
+            清空所有监听事件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Events.FrameworkEvent`4.Invoke(`0,`1,`2,`3)">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:DotNetCore.Common.IO.LengthException">
+            <summary>
+            长度异常
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.LengthException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:DotNetCore.Common.IO.BinaryBuffer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.Cache">
+            <summary>
+            缓存数组
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.ReadOnlyCache">
+            <summary>
+            只读缓存
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.IsLittleEndian">
+            <summary>
+            大小端 ，默认值 是当前机器的,设置这个值 如果大小端和当前机器不一致，那么写入时将会反转
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.ReadPosition">
+            <summary>
+            读到的下标位置
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.WritePosition">
+            <summary>
+            写的下标位置
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.IO.BinaryBuffer._reader">
+            <summary>
+            读取类
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.IO.BinaryBuffer._writer">
+            <summary>
+            写入类
+            </summary>
+        </member>
+        <member name="P:DotNetCore.Common.IO.BinaryBuffer.CanReadSize">
+             <summary>
+            当前可以读取的长度
+             </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Allocate(System.Int32)">
+            <summary>
+            分配一段内存
+            </summary>
+            <param name="bufferSize">内存长度</param>
+            <returns>缓存对象</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Allocate(System.Byte[])">
+            <summary>
+            分配一段内存 注:这里是浅拷贝
+            </summary>
+            <param name="buffer">内存</param>
+            <returns>缓存对象</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Finalize">
+            <summary>
+            析构 当虚拟机自己判断脚本再无引用时  是否所有内存
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Read(System.Int32)">
+            <summary>
+            读取指定数量字节
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <param name="count">需要读取的数量</param>
+            
+            <returns>读取的字节数组</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadBoolean">
+            <summary>
+            bool值读取
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadByte">
+            <summary>
+            读取一个字节
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadChar">
+            <summary>
+            读取单个字符
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadChars(System.Int32,System.Text.Encoding)">
+            <summary>
+            读取字符串
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <param name="count">字符串长度</param>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadDecimal">
+            <summary>
+            读取decimal
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadDouble">
+            <summary>
+            读取 double
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadInt16">
+            <summary>
+            读取 short
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadInt32">
+            <summary>
+            读取 int
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadInt64">
+            <summary>
+            读取 long
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+            <returns>读取值</returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadSingle">
+            <summary>
+            读取 float
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadUInt16">
+            <summary>
+            读取 ushort
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadUInt32">
+            <summary>
+            读取 uint
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.ReadUInt64">
+            <summary>
+            读取 ulong
+            <para>
+            抛出异常 ： LengthException，ArgumentExcePtion;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+             /// <summary>
+            往缓存区写入一个数组
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+            </summary>
+            <param name="data"></param>
+            <param name="index"></param>
+            <param name="count"></param>
+            <param name="isFlip">是否需要反转</param>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.String,System.Text.Encoding)">
+            <summary>
+            往缓存区写入字符串
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Single)">
+            <summary>
+            往缓存区写入一个 float
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Double)">
+            <summary>
+            往缓存区写入一个 double
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Object)">
+            <summary>
+            往缓存区写入一个 dynamic
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Char)">
+            <summary>
+            往缓存区写入一个 char
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Byte)">
+            <summary>
+            往缓存区写入一个 byte
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Boolean)">
+            <summary>
+            往缓存区写入一个 bool
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Int16)">
+            <summary>
+            往缓存区写入一个 Int16
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.UInt16)">
+            <summary>
+            往缓存区写入一个 UInt16
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Int32)">
+            <summary>
+            往缓存区写入一个 Int32
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.UInt32)">
+            <summary>
+            往缓存区写入一个 UInt32
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.Int64)">
+            <summary>
+            往缓存区写入一个 Int64
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Write(System.UInt64)">
+            <summary>
+            往缓存区写入一个 UInt64
+            <para>
+            抛出异常 ： ArgumentException，ArgumentNullException，ArgumentOutOfRangeException，IOException，ObjectDisposedException;   
+            </para>
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Dispose">
+            <summary>
+            释放组件所有资源
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.TruncateCache(System.Int32)">
+            <summary>
+            扩充缓存区 
+            </summary>
+            <param name="count">需要写入缓存的大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.BinaryBuffer.Flip(System.Byte[])">
+            <summary>
+            如果输入大小端与当前系统大小端不一致 需要反转
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetCore.Common.IO.Serialization">
+            <summary>
+            序列化类
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.IO.Serialization.BytesToObject``1(System.Byte[])">
+            <summary>
+            二进制数组转对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.IO.Serialization.ObjectToBytes(System.Object)">
+            <summary>
+            对象转2进制数组
+            </summary>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetCore.Common.Text.StringConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Text.StringConverter.HexStringToBytes(System.String)">
+            <summary>
+            Hex 转 byte数组
+            </summary>
+            <param name="hexString">需要转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.StringConverter.BytesToHexString(System.Byte[])">
+            <summary>
+            byte数组转Hex
+            </summary>
+            <param name="bytes">需要转成的二进制数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.StringConverter.ChineseCharactersToPinYin(System.String)">
+            <summary>
+             中文字符转拼音
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.StringConverter.ChineseCharactersToPinYin(System.Char)">
+            <summary>
+            中文字符转拼音
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetCore.Common.Text.ByteConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.IntToBCD(System.Byte)">
+            <summary>
+            Int转成BCD
+            </summary>
+            <param name="value">int 值</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.BCDToInt(System.Byte)">
+            <summary>
+            BCD转成int
+            </summary>
+            <param name="value">返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.GetBitValue(System.Byte,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="bitIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.SetBitValue(System.Byte,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="bitIndex"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.GetBitValue(System.UInt16,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="bitIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.SetBitValue(System.UInt16,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="bitIndex"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.GetBitValue(System.UInt32,System.Int32)">
+            <summary>
+            获取某一位的值 0 或 1
+            </summary>
+            <param name="number">输出目标值</param>
+            <param name="bitIndex">需要获取第几位</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.SetBitValue(System.UInt32,System.Int32,System.Boolean)">
+            <summary>
+            设置某一位 
+            </summary>
+            <param name="number">目标数</param>
+            <param name="bitIndex">第几位</param>
+            <param name="flag">true = 1 flase = 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.GetBitValue(System.UInt64,System.Int32)">
+            <summary>
+            获取某一位的值 0 或 1
+            </summary>
+            <param name="number">输出目标值</param>
+            <param name="bitIndex">需要获取第几位</param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetCore.Common.Text.ByteConverter.SetBitValue(System.UInt64,System.Int32,System.Boolean)">
+            <summary>
+            设置某一位 
+            </summary>
+            <param name="number">目标数</param>
+            <param name="bitIndex">第几位</param>
+            <param name="flag">true = 1 flase = 0</param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetCore.Common.Utils.LogHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DotNetCore.Common.Utils.LogHelper.isEnable">
+            <summary>
+            设置是否输出Log文件
+            </summary>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Debug(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Debug(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Debug(System.Object,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Warn(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Warn(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Warn(System.Object,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Error(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Error(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DotNetCore.Common.Utils.LogHelper.Error(System.Object,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="arg"></param>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>
