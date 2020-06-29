@@ -81,7 +81,9 @@
     <Compile Include="Utils\QRCode.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NLog.config" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
