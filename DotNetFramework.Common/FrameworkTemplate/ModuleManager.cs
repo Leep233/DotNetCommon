@@ -239,6 +239,16 @@ namespace DotNetFramework.Common.FrameworkTemplate
         }
 
         /// <summary>
+        /// 指定业务模块UI界面展示
+        /// </summary>
+        /// <param name="moduleName"></param>
+        /// <param name="arg"></param>
+        public void ShowUI(string moduleName, object arg)
+        {
+            HandleMessage(moduleName, "ShowUI",arg);
+        }
+
+        /// <summary>
         /// 释放模块
         /// </summary>
         /// <param name="arg"></param>

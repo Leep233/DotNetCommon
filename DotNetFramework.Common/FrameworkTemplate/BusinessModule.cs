@@ -67,7 +67,13 @@ namespace DotNetFramework.Common.FrameworkTemplate
 
             methodInfo.Invoke(this, BindingFlags.CreateInstance | BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public,null,args,null);
         }
-        
+
+        /// <summary>
+        /// 如果需要显示UI，需要重写
+        /// </summary>
+        /// <param name="arg"></param>
+        protected virtual void ShowUI(object arg = null) { }
+
         /// <summary>
         /// 重写必须调用基类
         /// </summary>
